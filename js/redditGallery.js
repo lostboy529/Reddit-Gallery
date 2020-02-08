@@ -123,10 +123,3 @@ function sortGallery(clickedID, dropdownID) {
 		location.reload();
 	}
 }
-
-$(document).on('mouseover', '.thumbnail', function() {
-	var box = $(this).attr('id');
-	$(this).click(function() {
-		location.href = permalinkMap.get(box);
-	});
-});
